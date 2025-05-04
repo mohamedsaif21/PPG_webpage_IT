@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PPG Institute of Technology</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .header {
+      background-image: url('E:/website/image/ppg_institute_of_technology_image.jpeg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px 180px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .login {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 14px;
+    }
+
+    .login a {
+      color: rgb(4, 0, 0);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 80px; 
+      height: 80px;
+      border-radius: 50%; 
+      border: 3px solid white;
+      object-fit: cover; 
+    }
+
+    .main-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: -50px;
+      gap: 20px;
+      padding: 40px 10px;
+    }
+
+    .card {
+      background-color: #fce4ec;
+      border-radius: 20px;
+      width: 220px;
+      height: 180px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      animation: popIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes popIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .card i {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .card span {
+      font-weight: 600;
+      font-size: 16px;
+      color: #222;
+      text-align: center;
+    }
+
+    .info-section {
+      text-align: center;
+      margin: 40px 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .info-section p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #3e2723;
+      color: white;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-content div {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-content h3 {
+      color: #cddc39;
+      margin-bottom: 10px;
+    }
+
+    .footer-content p, .footer-content a {
+      line-height: 1.6;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      border-top: 1px solid #5d4037;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="E:\website\image\logo_images.jpeg" alt="Logo" class="logo">
+    <div class="login">
+      <a href="E:\website\userdashboard.html" style="text-decoration: none; color: inherit;">
+        <i class="fa-solid fa-user" id="user-icon"></i>
+      </a>
+    </div>
+    <h1>PPG Institute of Technology</h1>
+  </div>
+
+  <div class="main-section">
+    <a href="E:\website\paper.html" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Question Paper</span>
+      </div>
+    </a>
+    <a href="#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <i class="fa-solid fa-trophy"></i>
+      <span>Student Achievements</span>
+    </div>
+    <a href="#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <i class="fa-solid fa-users"></i>
+      <span>Student Talent Gallery</span>
+    </div>
+    <a href="#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <i class="fa-solid fa-upload"></i>
+      <span>Submit Your Work</span>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2>Explore Your Department Resources</h2>
+    <p>
+      Welcome to the Department Hub! Here you can access past question papers, student achievements, talent showcases, and more — all in one place. Discover, learn, and get inspired by your peers.
+    </p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <!-- About Us Section -->
+      <div>
+        <h3>ABOUT US</h3>
+        <p>
+          PPG Institute of Technology, (PPGIT), a flagship institution conceived in the year 2008 and established under the aegis of renowned P.Perichi Gounder Memorial Education and Charitable Trust (PPG Trust), Coimbatore.
+        </p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> RATHNAGIRI ROAD, SARAVANAMPATTI, COIMBATORE, Tamil Nadu, 641035
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i> ppgit@ppg.edu.in
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i> +91 90477 77277, +91 90477 77977
+        </p>
+        <div>
+          <a href="#" style="margin-right: 10px;"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyright © 2025 PPG Institute Of Technology. All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>

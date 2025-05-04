@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Papers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #dfe6e9);
+      margin: 0;
+      padding: 0;
+    }
+
+    .semester-label {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #2a4d7a;
+      margin: 20px 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      display: grid; /* Use CSS Grid */
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 20px; /* Space between cards */
+      padding: 50px;
+      justify-content: center; /* Center the grid */
+    }
+
+    .question-card {
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      width: 320px;
+      height: 120px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .question-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .year-text {
+      font-weight: bold;
+      color: white;
+      font-size: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .question-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 100%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+      transform: rotate(45deg);
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    .question-card:hover::before {
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Semester Label -->
+  <div class="semester-label">Semester 4</div>
+
+  <div class="container">
+    <!-- 2021-2022 Card -->
+    <div class="question-card" onclick="location.href='2021-2022.html'">
+      <img src="images/question-paper-icon.png" alt="Question Paper" class="card-img" />
+      <span class="year-text">2021-2022</span>
+    </div>
+
+    <!-- 2022-2023 Card -->
+    <div class="question-card" onclick="location.href='2022-2023.html'">
+      <img src="images/question-paper-icon.png" alt="Question Paper" class="card-img" />
+      <span class="year-text">2022-2023</span>
+    </div>
+
+    <!-- 2023-2024 Card -->
+    <div class="question-card" onclick="location.href='2023-2024.html'">
+      <img src="images/question-paper-icon.png" alt="Question Paper" class="card-img" />
+      <span class="year-text">2023-2024</span>
+    </div>
+
+    <!-- 2024-2025 Card -->
+    <div class="question-card card-2024-2025" onclick="location.href='2024-2025.html'">
+      <img src="images/question-paper-icon.png" alt="Question Paper" class="card-img" />
+      <span class="year-text">2024-2025</span>
+    </div>
+  </div>
+</body>
+</html>
