@@ -13,7 +13,7 @@
     }
 
     .header {
-      background-image: url('PPG_webpage_IT\image\ppg_institute_of_technology_image.jpeg'); /* Background image */
+      background-image: url('./image/ppg_institute_of_technology_image.jpeg'); /* Corrected relative path */
       background-size: cover;
       background-position: center;
       padding: 60px 20px 180px;
@@ -169,39 +169,44 @@
 </head>
 <body>
   <div class="header">
-    <img src="E:\website\image\logo_images.jpeg" alt="Logo" class="logo">
+    <img src="./image/logo_images.jpeg" alt="Logo" class="logo"> <!-- Corrected relative path -->
     <div class="login">
-      <a href="E:\website\userdashboard.html" style="text-decoration: none; color: inherit;">
+      <a href="./userdashboard.html" style="text-decoration: none; color: inherit;"> <!-- Corrected relative path -->
         <i class="fa-solid fa-user" id="user-icon"></i>
       </a>
     </div>
     <h1>PPG Institute of Technology</h1>
   </div>
 
+  <!-- Card Section -->
   <div class="main-section">
-    <a href="E:\website\paper.html" style="text-decoration: none; color: inherit;">
+    <a href="./paper.html" style="text-decoration: none; color: inherit;">
       <div class="card">
         <i class="fa-solid fa-file-lines"></i>
         <span>Question Paper</span>
       </div>
     </a>
     <a href="#" style="text-decoration: none; color: inherit;">
-    <div class="card">
-      <i class="fa-solid fa-trophy"></i>
-      <span>Student Achievements</span>
-    </div>
+      <div class="card">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Student Achievements</span>
+      </div>
+    </a>
     <a href="#" style="text-decoration: none; color: inherit;">
-    <div class="card">
-      <i class="fa-solid fa-users"></i>
-      <span>Student Talent Gallery</span>
-    </div>
+      <div class="card">
+        <i class="fa-solid fa-users"></i>
+        <span>Student Talent Gallery</span>
+      </div>
+    </a>
     <a href="#" style="text-decoration: none; color: inherit;">
-    <div class="card">
-      <i class="fa-solid fa-upload"></i>
-      <span>Submit Your Work</span>
-    </div>
+      <div class="card">
+        <i class="fa-solid fa-upload"></i>
+        <span>Submit Your Work</span>
+      </div>
+    </a>
   </div>
 
+  <!-- Info Section -->
   <div class="info-section">
     <h2>Explore Your Department Resources</h2>
     <p>
@@ -212,7 +217,6 @@
   <!-- Footer Section -->
   <footer>
     <div class="footer-content">
-      <!-- About Us Section -->
       <div>
         <h3>ABOUT US</h3>
         <p>
